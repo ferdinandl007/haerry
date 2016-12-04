@@ -7,14 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15B921611FCEE330715E82F4 /* Pods_haerry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76E0757B64F2C928A5E7BDB /* Pods_haerry.framework */; };
+		B17D65FA1DF37DF200E04A90 /* BetelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17D65F91DF37DF200E04A90 /* BetelController.swift */; };
+		B17D65FD1DF3835A00E04A90 /* PubNub.m in Sources */ = {isa = PBXBuildFile; fileRef = B17D65FC1DF3835A00E04A90 /* PubNub.m */; };
+		B17D660A1DF3ADD500E04A90 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17D66091DF3ADD500E04A90 /* RestKit.framework */; };
+		B17D660C1DF3ADE300E04A90 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17D660B1DF3ADE300E04A90 /* SpeechToTextV1.framework */; };
+		B17D660D1DF3ADF800E04A90 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17D66091DF3ADD500E04A90 /* RestKit.framework */; };
+		B17D660E1DF3ADF800E04A90 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B17D66091DF3ADD500E04A90 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B17D660F1DF3ADFC00E04A90 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17D660B1DF3ADE300E04A90 /* SpeechToTextV1.framework */; };
+		B17D66101DF3ADFC00E04A90 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B17D660B1DF3ADE300E04A90 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B1863C041DF36F5D0070A8ED /* conViw.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1863C031DF36F5D0070A8ED /* conViw.swift */; };
 		B1AAE6B41DF3157100B890F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AAE6B31DF3157100B890F2 /* AppDelegate.swift */; };
 		B1AAE6B61DF3157100B890F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AAE6B51DF3157100B890F2 /* ViewController.swift */; };
 		B1AAE6B91DF3157100B890F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1AAE6B71DF3157100B890F2 /* Main.storyboard */; };
 		B1AAE6BB1DF3157100B890F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1AAE6BA1DF3157100B890F2 /* Assets.xcassets */; };
 		B1AAE6BE1DF3157100B890F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1AAE6BC1DF3157100B890F2 /* LaunchScreen.storyboard */; };
+		B1AAE6C61DF315E800B890F2 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AAE6C51DF315E800B890F2 /* Mapbox.framework */; };
+		B1AAE6C71DF315F100B890F2 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AAE6C51DF315E800B890F2 /* Mapbox.framework */; };
+		B1AAE6C81DF315F100B890F2 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B1AAE6C51DF315E800B890F2 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B1AAE6CE1DF31EBE00B890F2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AAE6CD1DF31EBE00B890F2 /* LocationManager.swift */; };
+		B1AAE6D11DF3294600B890F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AAE6D01DF3294600B890F2 /* Constants.swift */; };
+		B1AAE6D31DF329B600B890F2 /* DBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AAE6D21DF329B600B890F2 /* DBProvider.swift */; };
+		B1AAE6D51DF32C3700B890F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1AAE6D41DF32C3700B890F2 /* GoogleService-Info.plist */; };
+		B1AAE6D71DF32CD100B890F2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AAE6D61DF32CD100B890F2 /* Login.swift */; };
+		B1AAE6D91DF32D4700B890F2 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AAE6D81DF32D4700B890F2 /* AuthProvider.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B1AAE6C91DF315F100B890F2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B1AAE6C81DF315F100B890F2 /* Mapbox.framework in Embed Frameworks */,
+				B17D660E1DF3ADF800E04A90 /* RestKit.framework in Embed Frameworks */,
+				B17D66101DF3ADFC00E04A90 /* SpeechToTextV1.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1083BC9635803E8298734085 /* Pods-haerry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-haerry.release.xcconfig"; path = "Pods/Target Support Files/Pods-haerry/Pods-haerry.release.xcconfig"; sourceTree = "<group>"; };
+		A76E0757B64F2C928A5E7BDB /* Pods_haerry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_haerry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B17D65F91DF37DF200E04A90 /* BetelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetelController.swift; sourceTree = "<group>"; };
+		B17D65FC1DF3835A00E04A90 /* PubNub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PubNub.m; sourceTree = "<group>"; };
+		B17D66091DF3ADD500E04A90 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RestKit.framework; sourceTree = "<group>"; };
+		B17D660B1DF3ADE300E04A90 /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpeechToTextV1.framework; sourceTree = "<group>"; };
+		B1863C031DF36F5D0070A8ED /* conViw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = conViw.swift; sourceTree = "<group>"; };
 		B1AAE6B01DF3157100B890F2 /* haerry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = haerry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1AAE6B31DF3157100B890F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1AAE6B51DF3157100B890F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +64,14 @@
 		B1AAE6BA1DF3157100B890F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1AAE6BD1DF3157100B890F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1AAE6BF1DF3157100B890F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1AAE6C51DF315E800B890F2 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		B1AAE6CD1DF31EBE00B890F2 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		B1AAE6D01DF3294600B890F2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B1AAE6D21DF329B600B890F2 /* DBProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBProvider.swift; sourceTree = "<group>"; };
+		B1AAE6D41DF32C3700B890F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B1AAE6D61DF32CD100B890F2 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		B1AAE6D81DF32D4700B890F2 /* AuthProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		F026EFC98AFBD499A51826C4 /* Pods-haerry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-haerry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-haerry/Pods-haerry.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +79,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B17D660F1DF3ADFC00E04A90 /* SpeechToTextV1.framework in Frameworks */,
+				B1AAE6C61DF315E800B890F2 /* Mapbox.framework in Frameworks */,
+				B17D660C1DF3ADE300E04A90 /* SpeechToTextV1.framework in Frameworks */,
+				B1AAE6C71DF315F100B890F2 /* Mapbox.framework in Frameworks */,
+				15B921611FCEE330715E82F4 /* Pods_haerry.framework in Frameworks */,
+				B17D660A1DF3ADD500E04A90 /* RestKit.framework in Frameworks */,
+				B17D660D1DF3ADF800E04A90 /* RestKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +97,8 @@
 			children = (
 				B1AAE6B21DF3157100B890F2 /* haerry */,
 				B1AAE6B11DF3157100B890F2 /* Products */,
+				B7601BDCF07D35092FA8B680 /* Pods */,
+				F93E5373FDC1894794F0C136 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +113,75 @@
 		B1AAE6B21DF3157100B890F2 /* haerry */ = {
 			isa = PBXGroup;
 			children = (
+				B1AAE6D41DF32C3700B890F2 /* GoogleService-Info.plist */,
+				B1AAE6CF1DF3290600B890F2 /* Pligins */,
+				B1AAE6CC1DF31C0300B890F2 /* Controller */,
+				B1AAE6CB1DF31BEF00B890F2 /* View */,
+				B1AAE6CA1DF31BE000B890F2 /* Model */,
+				B1AAE6C51DF315E800B890F2 /* Mapbox.framework */,
 				B1AAE6B31DF3157100B890F2 /* AppDelegate.swift */,
-				B1AAE6B51DF3157100B890F2 /* ViewController.swift */,
 				B1AAE6B71DF3157100B890F2 /* Main.storyboard */,
 				B1AAE6BA1DF3157100B890F2 /* Assets.xcassets */,
 				B1AAE6BC1DF3157100B890F2 /* LaunchScreen.storyboard */,
 				B1AAE6BF1DF3157100B890F2 /* Info.plist */,
+				B17D660B1DF3ADE300E04A90 /* SpeechToTextV1.framework */,
+				B17D66091DF3ADD500E04A90 /* RestKit.framework */,
 			);
 			path = haerry;
+			sourceTree = "<group>";
+		};
+		B1AAE6CA1DF31BE000B890F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B1AAE6CD1DF31EBE00B890F2 /* LocationManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B1AAE6CB1DF31BEF00B890F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B1863C031DF36F5D0070A8ED /* conViw.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B1AAE6CC1DF31C0300B890F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B1AAE6B51DF3157100B890F2 /* ViewController.swift */,
+				B1AAE6D61DF32CD100B890F2 /* Login.swift */,
+				B17D65F91DF37DF200E04A90 /* BetelController.swift */,
+				B17D65FC1DF3835A00E04A90 /* PubNub.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B1AAE6CF1DF3290600B890F2 /* Pligins */ = {
+			isa = PBXGroup;
+			children = (
+				B1AAE6D81DF32D4700B890F2 /* AuthProvider.swift */,
+				B1AAE6D01DF3294600B890F2 /* Constants.swift */,
+				B1AAE6D21DF329B600B890F2 /* DBProvider.swift */,
+			);
+			name = Pligins;
+			sourceTree = "<group>";
+		};
+		B7601BDCF07D35092FA8B680 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F026EFC98AFBD499A51826C4 /* Pods-haerry.debug.xcconfig */,
+				1083BC9635803E8298734085 /* Pods-haerry.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F93E5373FDC1894794F0C136 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A76E0757B64F2C928A5E7BDB /* Pods_haerry.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +191,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1AAE6C21DF3157100B890F2 /* Build configuration list for PBXNativeTarget "haerry" */;
 			buildPhases = (
+				77242C81FD4655FBED6A8620 /* [CP] Check Pods Manifest.lock */,
 				B1AAE6AC1DF3157100B890F2 /* Sources */,
 				B1AAE6AD1DF3157100B890F2 /* Frameworks */,
 				B1AAE6AE1DF3157100B890F2 /* Resources */,
+				B1AAE6C91DF315F100B890F2 /* Embed Frameworks */,
+				29483272369308594CB34072 /* [CP] Embed Pods Frameworks */,
+				3A068E35EBCEFED990D70095 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +249,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1AAE6BE1DF3157100B890F2 /* LaunchScreen.storyboard in Resources */,
+				B1AAE6D51DF32C3700B890F2 /* GoogleService-Info.plist in Resources */,
 				B1AAE6BB1DF3157100B890F2 /* Assets.xcassets in Resources */,
 				B1AAE6B91DF3157100B890F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29483272369308594CB34072 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-haerry/Pods-haerry-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A068E35EBCEFED990D70095 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-haerry/Pods-haerry-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77242C81FD4655FBED6A8620 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B1AAE6AC1DF3157100B890F2 /* Sources */ = {
@@ -139,6 +312,14 @@
 			files = (
 				B1AAE6B61DF3157100B890F2 /* ViewController.swift in Sources */,
 				B1AAE6B41DF3157100B890F2 /* AppDelegate.swift in Sources */,
+				B1AAE6D31DF329B600B890F2 /* DBProvider.swift in Sources */,
+				B1AAE6D71DF32CD100B890F2 /* Login.swift in Sources */,
+				B17D65FA1DF37DF200E04A90 /* BetelController.swift in Sources */,
+				B1AAE6D91DF32D4700B890F2 /* AuthProvider.swift in Sources */,
+				B1863C041DF36F5D0070A8ED /* conViw.swift in Sources */,
+				B17D65FD1DF3835A00E04A90 /* PubNub.m in Sources */,
+				B1AAE6CE1DF31EBE00B890F2 /* LocationManager.swift in Sources */,
+				B1AAE6D11DF3294600B890F2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,9 +438,14 @@
 		};
 		B1AAE6C31DF3157100B890F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F026EFC98AFBD499A51826C4 /* Pods-haerry.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/haerry",
+				);
 				INFOPLIST_FILE = haerry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ferdinand-loesch.haerry";
@@ -270,9 +456,14 @@
 		};
 		B1AAE6C41DF3157100B890F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1083BC9635803E8298734085 /* Pods-haerry.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/haerry",
+				);
 				INFOPLIST_FILE = haerry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ferdinand-loesch.haerry";
@@ -300,6 +491,7 @@
 				B1AAE6C41DF3157100B890F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
