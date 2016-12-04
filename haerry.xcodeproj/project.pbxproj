@@ -31,6 +31,9 @@
 		B1AAE6D51DF32C3700B890F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1AAE6D41DF32C3700B890F2 /* GoogleService-Info.plist */; };
 		B1AAE6D71DF32CD100B890F2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AAE6D61DF32CD100B890F2 /* Login.swift */; };
 		B1AAE6D91DF32D4700B890F2 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AAE6D81DF32D4700B890F2 /* AuthProvider.swift */; };
+		B1AEF1F31DF4010900F926DC /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AEF1F21DF4010900F926DC /* VisualRecognitionV3.framework */; };
+		B1AEF1F41DF4011200F926DC /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AEF1F21DF4010900F926DC /* VisualRecognitionV3.framework */; };
+		B1AEF1F51DF4011200F926DC /* VisualRecognitionV3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B1AEF1F21DF4010900F926DC /* VisualRecognitionV3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +46,7 @@
 				B1AAE6C81DF315F100B890F2 /* Mapbox.framework in Embed Frameworks */,
 				B17D660E1DF3ADF800E04A90 /* RestKit.framework in Embed Frameworks */,
 				B17D66101DF3ADFC00E04A90 /* SpeechToTextV1.framework in Embed Frameworks */,
+				B1AEF1F51DF4011200F926DC /* VisualRecognitionV3.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +75,7 @@
 		B1AAE6D41DF32C3700B890F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B1AAE6D61DF32CD100B890F2 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		B1AAE6D81DF32D4700B890F2 /* AuthProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		B1AEF1F21DF4010900F926DC /* VisualRecognitionV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VisualRecognitionV3.framework; sourceTree = "<group>"; };
 		F026EFC98AFBD499A51826C4 /* Pods-haerry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-haerry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-haerry/Pods-haerry.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +91,8 @@
 				15B921611FCEE330715E82F4 /* Pods_haerry.framework in Frameworks */,
 				B17D660A1DF3ADD500E04A90 /* RestKit.framework in Frameworks */,
 				B17D660D1DF3ADF800E04A90 /* RestKit.framework in Frameworks */,
+				B1AEF1F41DF4011200F926DC /* VisualRecognitionV3.framework in Frameworks */,
+				B1AEF1F31DF4010900F926DC /* VisualRecognitionV3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +140,7 @@
 		B1AAE6CA1DF31BE000B890F2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B1AEF1F21DF4010900F926DC /* VisualRecognitionV3.framework */,
 				B1AAE6CD1DF31EBE00B890F2 /* LocationManager.swift */,
 			);
 			name = Model;

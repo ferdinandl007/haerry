@@ -9,18 +9,23 @@
 import UIKit
 import RestKit
 import SpeechToTextV1
+import Canvas
 
 class BetelController: UIViewController {
     @IBOutlet weak var myHealth: UIProgressView!
     @IBOutlet weak var opHealth: UIProgressView!
-    
     @IBOutlet weak var spell3: UILabel!
+  
+    @IBOutlet weak var won: UILabel!
+    @IBOutlet weak var view2: CSAnimationView!
     @IBOutlet weak var spell2: UILabel!
     @IBOutlet weak var spell1: UILabel!
     
     weak var timer: Timer!
     
 
+    
+    
     
     var speechToText: SpeechToText!
     var speechToTextSession: SpeechToTextSession!
@@ -52,7 +57,12 @@ class BetelController: UIViewController {
         streamMicrophoneBasic()
         
     }
-    
+    func animator(view: CSAnimationView) {
+        view.duration = 0.3
+        view.delay = 0
+        view.type = CSAnimationTypeMorph
+        view.startCanvasAnimation()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -92,14 +102,14 @@ class BetelController: UIViewController {
                     print("transmutation")
                     
                     // Stop the recorder instance
-                    
+                    self.animator(view: self.view2)
                     self.isStreaming = false
-                    
+                    self.won.isHidden = false
                     // stop recognizing microphone audio
                     self.speechToText.stopRecognizeMicrophone()
                     self.opHealth.setProgress(0, animated: true)
                     self.myHealth.setProgress(30, animated: true)
-                    self.timer = Timer.scheduledTimer(timeInterval: TimeInterval(2), target: self, selector: #selector(BetelController.diss), userInfo: nil, repeats: false)
+                    self.timer = Timer.scheduledTimer(timeInterval: TimeInterval(1), target: self, selector: #selector(BetelController.diss), userInfo: nil, repeats: false)
                     self.myCodeSpell(spell: "spell", Channel: "transmutation")
 
                     self.changeBackgroundColor()
@@ -110,10 +120,8 @@ class BetelController: UIViewController {
                     
                     print("YES")
                     
-                  
-                    
-
-                    
+                  self.won.isHidden = false
+                    self.animator(view: self.view2)
                     self.opHealth.setProgress(0, animated: true)
                     self.myHealth.setProgress(30, animated: true)
                     // Stop the recorder instance
@@ -133,9 +141,9 @@ class BetelController: UIViewController {
                 if string.range(of: "strawberries") != nil {
                     
                     print("YES")
-                    
+                    self.won.isHidden = false
                     // Stop the recorder instance
-                    
+                    self.animator(view: self.view2)
                     self.isStreaming = false
                   
                     self.timer = Timer.scheduledTimer(timeInterval: TimeInterval(2), target: self, selector: #selector(BetelController.diss), userInfo: nil, repeats: false)
